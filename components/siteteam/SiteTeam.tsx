@@ -107,7 +107,7 @@ export function SiteTeam() {
     <>
       <StaffLayout
         title="Site Team workspace"
-        subtitle="Site 04 — Guy's, London · SOLARIS-2 (GSK'916)"
+        subtitle="Site 04 — Guy's, London · SOLARIS-2 (CVN'916)"
         brandTitle="Site Team"
         brandSubtitle="Guy's, London"
         user={{
@@ -200,7 +200,7 @@ const STAGE_DOT: Record<string, string> = {
   shortlist: "bg-ai-indigo",
   screening: "bg-paused",
   eligible: "bg-ai-teal",
-  enrolled: "bg-gsk-orange",
+  enrolled: "bg-brand-orange",
 };
 
 function PipelineIntro({ candidates }: { candidates: Candidate[] }) {
@@ -347,7 +347,7 @@ function DataCapture() {
         className={`flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors ${
           verified
             ? "bg-active/10 text-[#0f7a54]"
-            : "bg-gsk-orange text-white hover:bg-gsk-orange-hover"
+            : "bg-brand-orange text-white hover:bg-brand-orange-hover"
         }`}
       >
         <Check size={15} />

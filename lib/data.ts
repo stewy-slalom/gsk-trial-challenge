@@ -62,7 +62,7 @@ export function milestonesFor(index: number): Milestone[] {
 export const TRIALS: Trial[] = [
   {
     id: "solaris",
-    code: "GSK'916",
+    code: "CVN'916",
     name: "SOLARIS-2",
     indication: "Advanced NSCLC, STK11 / KEAP1 co-mutation",
     phase: "Phase II",
@@ -97,7 +97,7 @@ export const TRIALS: Trial[] = [
   },
   {
     id: "helios",
-    code: "GSK'742",
+    code: "CVN'742",
     name: "HELIOS-B",
     indication: "Metastatic colorectal, MSI-high",
     phase: "Phase II",
@@ -131,7 +131,7 @@ export const TRIALS: Trial[] = [
   },
   {
     id: "aurora",
-    code: "GSK'508",
+    code: "CVN'508",
     name: "AURORA",
     indication: "Ovarian, BRCA-mutated, platinum-sensitive",
     phase: "Phase II",
@@ -242,7 +242,7 @@ export const SITES: Site[] = [
     },
   },
 
-  // HELIOS-B (GSK'742) sites
+  // HELIOS-B (CVN'742) sites
   {
     id: "chicago",
     trialId: "helios",
@@ -298,7 +298,7 @@ export const SITES: Site[] = [
     },
   },
 
-  // AURORA (GSK'508) sites
+  // AURORA (CVN'508) sites
   {
     id: "newyork",
     trialId: "aurora",
@@ -964,7 +964,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "13 Jul 2026",
     time: "09:05",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "manchester",
     category: "Early warning",
     actor: "Agent",
@@ -976,7 +976,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "13 Jul 2026",
     time: "08:40",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     category: "Enrolment",
     actor: "RTSM (system)",
     event: "Enrolment reconciled live across 4 sites. Portfolio total 31 of 48.",
@@ -986,7 +986,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "12 Jul 2026",
     time: "16:22",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "guys",
     category: "Consent",
     actor: "Agent",
@@ -998,7 +998,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "12 Jul 2026",
     time: "11:10",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "guys",
     category: "Enrolment",
     actor: "Dr A. Mensah, PI",
@@ -1009,7 +1009,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "11 Jul 2026",
     time: "14:48",
     trialId: "helios",
-    trialCode: "GSK'742",
+    trialCode: "CVN'742",
     category: "Early warning",
     actor: "Agent",
     event:
@@ -1020,7 +1020,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "11 Jul 2026",
     time: "10:02",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     category: "Diversity",
     actor: "Agent",
     event:
@@ -1031,7 +1031,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "10 Jul 2026",
     time: "15:30",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     category: "Criteria",
     actor: "CTM · M. Delgado",
     event:
@@ -1042,7 +1042,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "09 Jul 2026",
     time: "09:15",
     trialId: "aurora",
-    trialCode: "GSK'508",
+    trialCode: "CVN'508",
     category: "Milestone",
     actor: "Agent",
     event: "M5 Enrolment target reached at 94% (34 of 36). Focus shifting to LPLV monitoring.",
@@ -1052,7 +1052,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "08 Jul 2026",
     time: "13:40",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "guys",
     category: "Enrolment",
     actor: "Dr A. Mensah, PI",
@@ -1063,7 +1063,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "06 Jul 2026",
     time: "10:25",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "madrid",
     category: "Activation",
     actor: "Agent",
@@ -1075,7 +1075,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "05 Jul 2026",
     time: "17:05",
     trialId: "helios",
-    trialCode: "GSK'742",
+    trialCode: "CVN'742",
     category: "Diversity",
     actor: "Agent",
     event:
@@ -1086,7 +1086,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "03 Jul 2026",
     time: "12:00",
     trialId: "aurora",
-    trialCode: "GSK'508",
+    trialCode: "CVN'508",
     category: "Consent",
     actor: "Dr R. Silva, PI",
     event: "Amendment v2 re-consents completed for all active participants.",
@@ -1096,7 +1096,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "28 Jun 2026",
     time: "09:50",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     category: "Milestone",
     actor: "CTM · M. Delgado",
     event: "M3 Screening open confirmed across activated sites.",
@@ -1106,7 +1106,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "20 Jun 2026",
     time: "11:35",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     siteId: "guys",
     category: "Enrolment",
     actor: "RTSM (system)",
@@ -1117,7 +1117,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "14 Jun 2026",
     time: "08:20",
     trialId: "helios",
-    trialCode: "GSK'742",
+    trialCode: "CVN'742",
     category: "Milestone",
     actor: "CTM · M. Delgado",
     event: "M2 First patient in reached at lead site.",
@@ -1127,7 +1127,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     date: "02 Jun 2026",
     time: "14:10",
     trialId: "aurora",
-    trialCode: "GSK'508",
+    trialCode: "CVN'508",
     category: "Early warning",
     actor: "Agent",
     event:
@@ -1172,7 +1172,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   {
     id: "w1",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     severity: "High",
     title: "Screen-failure rate 2.1x trial average at Manchester",
     description:
@@ -1200,7 +1200,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   {
     id: "w2",
     trialId: "helios",
-    trialCode: "GSK'742",
+    trialCode: "CVN'742",
     severity: "High",
     title: "First-patient-in slip of 5 weeks predicted",
     description:
@@ -1228,7 +1228,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   {
     id: "w3",
     trialId: "solaris",
-    trialCode: "GSK'916",
+    trialCode: "CVN'916",
     severity: "Medium",
     title: "Diversity plan drifting on representation",
     description:
@@ -1256,7 +1256,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   {
     id: "w4",
     trialId: "aurora",
-    trialCode: "GSK'508",
+    trialCode: "CVN'508",
     severity: "Low",
     title: "Approaching enrolment target with strong retention",
     description:

@@ -9,7 +9,7 @@ import { Lock, Shield, Sparkle } from "@/components/ui/icons";
 // deployment enforces server-side auth, MFA, rate limiting, and lockout
 // before any content is served. Nothing sensitive is rendered until unlock.
 const DEMO_USER = "reviewer";
-const DEMO_PASS = "gsk-phase2";
+const DEMO_PASS = "corvane-phase2";
 const KEY = "ctp-auth";
 
 export function AuthGate({ children }: { children: React.ReactNode }) {
@@ -40,7 +40,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen items-center justify-center bg-surface px-4 py-10">
       <div className="w-full max-w-sm">
         <div className="mb-6 flex flex-col items-center text-center">
-          <img src="/gsk-logo.svg" alt="GSK" className="mb-5 h-9 w-auto" />
+          <img src="/corvane-logo.svg" alt="Corvane" className="mb-5 h-9 w-auto" />
           <h1 className="font-brand text-xl font-semibold text-ink">
             Connected Trial Platform
           </h1>
@@ -61,7 +61,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
             value={user}
             onChange={(e) => setUser(e.target.value)}
             autoComplete="username"
-            className="mb-4 h-10 w-full rounded-lg border border-line px-3 text-sm outline-none focus:border-gsk-orange"
+            className="mb-4 h-10 w-full rounded-lg border border-line px-3 text-sm outline-none focus:border-brand-orange"
           />
           <label className="mb-1 block text-sm font-medium text-ink" htmlFor="p">
             Password
@@ -72,7 +72,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
             value={pass}
             onChange={(e) => setPass(e.target.value)}
             autoComplete="current-password"
-            className="mb-4 h-10 w-full rounded-lg border border-line px-3 text-sm outline-none focus:border-gsk-orange"
+            className="mb-4 h-10 w-full rounded-lg border border-line px-3 text-sm outline-none focus:border-brand-orange"
           />
           {error && (
             <p className="mb-3 rounded-md bg-[#ef4444]/10 px-3 py-2 text-[13px] text-escalated">

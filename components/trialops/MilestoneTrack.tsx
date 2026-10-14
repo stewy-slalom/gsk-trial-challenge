@@ -37,7 +37,7 @@ export function MilestoneTrack({
                   m.reached
                     ? "bg-active/15 text-[#0f7a54]"
                     : m.current
-                      ? "bg-gsk-orange text-white"
+                      ? "bg-brand-orange text-white"
                       : "border border-line bg-white text-meta"
                 }`}
               >

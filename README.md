@@ -1,6 +1,6 @@
-# Connected Trial Platform — GSK
+# Connected Trial Platform — Corvane
 
-One application, three role-based experiences, for GSK Phase II oncology
+One application, three role-based experiences, for Corvane Phase II oncology
 recruitment and enrolment. Built to `connected-trial-platform-spec-v3.md`.
 
 ## Run
@@ -10,7 +10,7 @@ npm install
 npm run dev      # http://localhost:3000
 ```
 
-**Demonstration sign-in:** username `reviewer`, password `gsk-phase2`.
+**Demonstration sign-in:** username `reviewer`, password `corvane-phase2`.
 The whole app sits behind authentication; nothing renders pre-login (§4).
 
 ## The three experiences
@@ -43,9 +43,9 @@ screen (§5). Each experience preserves its own state when you switch away.
   run moves idle → running → done with a real in-flight indicator and a
   completion summary; agent output is labelled "AI generated" with a sparkle and
   carries provenance; Agent / Assist / Human autonomy badges appear throughout.
-- **Design system** (`app/globals.css`) — GSK Orange primary, teal/indigo
+- **Design system** (`app/globals.css`) — Corvane Orange primary, teal/indigo
   reserved for AI, semantic status colours (always paired with text/icon),
-  self-hosted GSK Precision + Inter, 8pt grid, soft elevation, no coloured
+  self-hosted Inter, 8pt grid, soft elevation, no coloured
   left-border accents, no em dashes in UI copy, no monospace, no emoji icons.
 - **Security & lockdown** (`next.config.ts`, `app/robots.ts`) — auth gate, CSP
   and hardening headers, noindex/nofollow, no third parties, all assets

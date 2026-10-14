@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Connected Trial Platform — GSK",
+  title: "Connected Trial Platform — Corvane",
   description:
-    "Role-based platform for GSK Phase II oncology recruitment and enrolment.",
+    "Role-based platform for Corvane Phase II oncology recruitment and enrolment.",
   // §4: nothing served to unauthenticated agents; no indexing.
   robots: {
     index: false,

@@ -4,7 +4,7 @@
 
 export const PATIENT = {
   name: "Amara",
-  trialCode: "GSK'916",
+  trialCode: "CVN'916",
   trialName: "SOLARIS-2",
   site: "Guy's, London",
   clinician: "Dr Mensah",

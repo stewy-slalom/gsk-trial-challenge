@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Connected Trial Platform — GSK",
+    name: "Connected Trial Platform — Corvane",
     short_name: "Trial Platform",
     description:
-      "Role-based platform for GSK Phase II oncology recruitment and enrolment.",
+      "Role-based platform for Corvane Phase II oncology recruitment and enrolment.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

@@ -15,7 +15,7 @@ import { Alert, Clock, Sparkle } from "./icons";
 const AUDIT_TONE: Record<AuditCategory, string> = {
   Milestone: "text-[#0f7a54] bg-[#10b981]/12",
   Criteria: "text-ai-indigo bg-ai-indigo-tint",
-  Enrolment: "text-gsk-orange bg-gsk-orange/10",
+  Enrolment: "text-brand-orange bg-brand-orange/10",
   Diversity: "text-ai-teal bg-ai-teal-tint",
   Consent: "text-ai-indigo bg-ai-indigo-tint",
   Activation: "text-[#a66a00] bg-[#f59e0b]/15",
@@ -40,7 +40,7 @@ export function AuditTrail({ entries }: { entries: AuditItem[] }) {
                   ? "bg-escalated"
                   : isAgent
                     ? "bg-ai-indigo"
-                    : "bg-gsk-orange"
+                    : "bg-brand-orange"
               }`}
               aria-hidden
             />
@@ -129,7 +129,7 @@ export function AuditProvider({ children }: { children: ReactNode }) {
           >
             <div className="flex items-start justify-between gap-3 border-b border-line px-5 py-4">
               <div className="flex items-center gap-2.5">
-                <Clock size={18} className="text-gsk-orange" />
+                <Clock size={18} className="text-brand-orange" />
                 <div>
                   <h2 className="text-base font-semibold text-ink">Audit log</h2>
                   <p className="text-[12px] text-meta">
@@ -183,7 +183,7 @@ export function AuditLogButton({
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") activate(e);
       }}
-      className={`inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-line px-2 py-1 text-[12px] font-medium text-body transition-colors hover:border-gsk-orange hover:text-gsk-orange ${className}`}
+      className={`inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-line px-2 py-1 text-[12px] font-medium text-body transition-colors hover:border-brand-orange hover:text-brand-orange ${className}`}
     >
       <Clock size={13} /> {label}
     </span>

@@ -222,7 +222,7 @@ function ParticipantDetail({
         </div>
         {cand && (
           <div className="text-right">
-            <p className="text-3xl font-semibold text-gsk-orange">
+            <p className="text-3xl font-semibold text-brand-orange">
               {cand.matchScore}%
             </p>
             <p className="text-[13px] text-meta">match score</p>
@@ -241,7 +241,7 @@ function ParticipantDetail({
 
           <div className="rounded-lg border border-line bg-white p-5">
             <div className="mb-3 flex items-center gap-2">
-              <Clock size={16} className="text-gsk-orange" />
+              <Clock size={16} className="text-brand-orange" />
               <SectionLabel>Audit log</SectionLabel>
             </div>
             <AuditTrail entries={participantAudit(p.code, p.cycle)} />
@@ -444,7 +444,7 @@ function TrialView({
           </p>
         </div>
         <div className="flex items-center gap-2 rounded-lg bg-surface px-4 py-2">
-          <Target size={18} className="text-gsk-orange" />
+          <Target size={18} className="text-brand-orange" />
           <span className="text-xl font-semibold text-ink">
             {trial.enrolled}
             <span className="text-sm font-normal text-meta"> / {trial.target}</span>
@@ -525,7 +525,7 @@ function TrialView({
                     {s.funnel.enrolled}
                   </span>{" "}
                   / {s.target} enrolled
-                  <ChevronRight size={15} className="text-gsk-orange" />
+                  <ChevronRight size={15} className="text-brand-orange" />
                 </span>
               </button>
               {s.warning && s.warning.tone === "escalated" && (
@@ -578,7 +578,7 @@ function SitePatientsTable({ site }: { site: Site }) {
                     trialCode: trial?.code ?? "",
                   })
                 }
-                className={`h-12 cursor-pointer border-b border-line transition-colors hover:bg-gsk-orange/5 ${
+                className={`h-12 cursor-pointer border-b border-line transition-colors hover:bg-brand-orange/5 ${
                   i % 2 ? "bg-surface" : "bg-white"
                 }`}
               >
@@ -632,7 +632,7 @@ function SiteFunnel({ funnel }: { funnel: Site["funnel"] }) {
           <span className="text-[12px] font-semibold text-ink">{s.n}</span>
           <div
             className={`w-full rounded-t ${
-              i === steps.length - 1 ? "bg-gsk-orange" : "bg-gsk-orange/30"
+              i === steps.length - 1 ? "bg-brand-orange" : "bg-brand-orange/30"
             }`}
             style={{
               height: `${Math.max(6, (s.n / steps[0].n) * 44)}px`,
@@ -833,7 +833,7 @@ function SiteView({
       {/* Audit log, in the context of the site information panel (§4/§7) */}
       <div className="rounded-lg border border-line bg-white p-5">
         <div className="mb-3 flex items-center gap-2">
-          <Clock size={16} className="text-gsk-orange" />
+          <Clock size={16} className="text-brand-orange" />
           <SectionLabel>Audit log</SectionLabel>
         </div>
         <AuditTrail entries={siteAudit(site)} />
@@ -1007,7 +1007,7 @@ function WarningCard({ warning: w }: { warning: EarlyWarning }) {
               <select
                 value={owner}
                 onChange={(e) => setOwner(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-line bg-white px-3 text-sm text-ink outline-none focus:border-gsk-orange"
+                className="mt-1 h-10 w-full rounded-lg border border-line bg-white px-3 text-sm text-ink outline-none focus:border-brand-orange"
               >
                 {w.owners.map((o) => (
                   <option key={o}>{o}</option>
@@ -1021,7 +1021,7 @@ function WarningCard({ warning: w }: { warning: EarlyWarning }) {
                 onChange={(e) => setNotes(e.target.value)}
                 rows={2}
                 placeholder="Add context or edits before deploying…"
-                className="mt-1 w-full rounded-lg border border-line bg-white p-3 text-sm outline-none focus:border-gsk-orange"
+                className="mt-1 w-full rounded-lg border border-line bg-white p-3 text-sm outline-none focus:border-brand-orange"
               />
             </label>
           </div>
@@ -1076,7 +1076,7 @@ function FilterPill({
       aria-pressed={active}
       className={`rounded-full px-3 py-1.5 text-[13px] transition-colors ${
         active
-          ? "bg-gsk-orange/10 font-semibold text-gsk-orange"
+          ? "bg-brand-orange/10 font-semibold text-brand-orange"
           : "border border-line font-medium text-body hover:bg-surface"
       }`}
     >
@@ -1178,7 +1178,7 @@ const REPORT_FUNNEL_COLORS = [
   "bg-ai-indigo",
   "bg-paused",
   "bg-ai-teal",
-  "bg-gsk-orange",
+  "bg-brand-orange",
 ];
 
 function ReportFunnel({ funnel }: { funnel: Site["funnel"] }) {
@@ -1264,7 +1264,7 @@ function SiteReportDetail({
                     trialCode: trial.code,
                   })
                 }
-                className="flex w-full items-center justify-between gap-3 px-5 py-3.5 text-left transition-colors hover:bg-gsk-orange/5"
+                className="flex w-full items-center justify-between gap-3 px-5 py-3.5 text-left transition-colors hover:bg-brand-orange/5"
               >
                 <div>
                   <p className="text-sm font-semibold text-ink">
@@ -1292,7 +1292,7 @@ function SiteReportDetail({
       {/* Audit log, in the context of the site report panel (§4/§7) */}
       <div className="rounded-lg border border-line bg-white p-5">
         <div className="mb-3 flex items-center gap-2">
-          <Clock size={16} className="text-gsk-orange" />
+          <Clock size={16} className="text-brand-orange" />
           <SectionLabel>Audit log</SectionLabel>
         </div>
         <AuditTrail entries={siteAudit(site)} />

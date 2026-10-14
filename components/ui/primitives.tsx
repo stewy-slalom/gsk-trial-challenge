@@ -45,7 +45,7 @@ export function Button({
   const sizing = size === "sm" ? "text-[13px] px-3 py-1.5" : "text-sm px-4 py-2.5";
   const variants: Record<string, string> = {
     primary:
-      "bg-gsk-orange text-white font-semibold hover:bg-gsk-orange-hover disabled:opacity-50 disabled:cursor-not-allowed",
+      "bg-brand-orange text-white font-semibold hover:bg-brand-orange-hover disabled:opacity-50 disabled:cursor-not-allowed",
     secondary:
       "bg-white border border-line text-ink font-semibold hover:bg-surface disabled:opacity-50",
     ai: "bg-ai-indigo text-white font-semibold hover:brightness-95 disabled:opacity-50 disabled:cursor-not-allowed",
@@ -235,7 +235,7 @@ export function Meter({
   tone?: "orange" | "active" | "escalated" | "indigo";
 }) {
   const colors = {
-    orange: "bg-gsk-orange",
+    orange: "bg-brand-orange",
     active: "bg-active",
     escalated: "bg-escalated",
     indigo: "bg-ai-indigo",

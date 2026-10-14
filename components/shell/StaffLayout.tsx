@@ -17,7 +17,7 @@ export interface StaffUser {
 }
 
 // Shared chrome for the two staff experiences (§11): left fixed sidebar with
-// GSK lockup + brand block, top bar with page title + search, and a user
+// Corvane lockup + brand block, top bar with page title + search, and a user
 // profile at the foot of the sidebar. Active nav uses a tinted fill and weight
 // change, never a border stripe (§3 ban).
 export function StaffLayout({
@@ -50,7 +50,7 @@ export function StaffLayout({
       {/* Sidebar */}
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-line bg-white lg:flex">
         <div className="flex items-center px-5 pt-5">
-          <img src="/gsk-logo.svg" alt="GSK" className="h-7 w-auto" />
+          <img src="/corvane-logo.svg" alt="Corvane" className="h-7 w-auto" />
         </div>
         {brandTitle && (
           <div className="px-5 pb-4 pt-3">
@@ -70,7 +70,7 @@ export function StaffLayout({
                 aria-current={isActive}
                 className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
                   isActive
-                    ? "bg-gsk-orange/10 font-semibold text-gsk-orange"
+                    ? "bg-brand-orange/10 font-semibold text-brand-orange"
                     : "font-normal text-body hover:bg-surface"
                 }`}
               >
@@ -83,7 +83,7 @@ export function StaffLayout({
         <div className="border-t border-line p-3">
           {user && (
             <div className="mb-1 flex items-center gap-2.5 px-2 py-1.5">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gsk-orange text-[13px] font-semibold text-white">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-orange text-[13px] font-semibold text-white">
                 {user.initials}
               </span>
               <div className="min-w-0">
@@ -125,7 +125,7 @@ export function StaffLayout({
           <span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-escalated" />
         </button>
         {user && (
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gsk-orange/15 text-[13px] font-semibold text-gsk-orange lg:hidden">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-orange/15 text-[13px] font-semibold text-brand-orange lg:hidden">
             {user.initials}
           </span>
         )}
@@ -139,7 +139,7 @@ export function StaffLayout({
             onClick={() => onNav(n.id)}
             className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] ${
               n.id === active
-                ? "bg-gsk-orange/10 font-semibold text-gsk-orange"
+                ? "bg-brand-orange/10 font-semibold text-brand-orange"
                 : "text-body"
             }`}
           >

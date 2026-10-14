@@ -17,7 +17,7 @@ export function OnTrialView({
   return (
     <div className="space-y-5">
       <div className="flex items-center gap-2">
-        <Activity size={18} className="text-gsk-orange" />
+        <Activity size={18} className="text-brand-orange" />
         <h2 className="text-base font-semibold text-ink">
           Enrolled / on-trial patients
         </h2>
@@ -97,7 +97,7 @@ function CycleBar({ position }: { position?: string }) {
         <span
           key={i}
           className={`h-1.5 flex-1 rounded-full ${
-            i < cur ? "bg-gsk-orange" : "bg-line"
+            i < cur ? "bg-brand-orange" : "bg-line"
           }`}
         />
       ))}

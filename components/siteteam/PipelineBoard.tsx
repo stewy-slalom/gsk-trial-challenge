@@ -186,7 +186,7 @@ function QuickPromote({
           onClick();
         }
       }}
-      className="mt-2.5 block cursor-pointer rounded-md border border-line px-2.5 py-1.5 text-center text-[12px] font-semibold text-ink transition-colors hover:border-gsk-orange hover:text-gsk-orange"
+      className="mt-2.5 block cursor-pointer rounded-md border border-line px-2.5 py-1.5 text-center text-[12px] font-semibold text-ink transition-colors hover:border-brand-orange hover:text-brand-orange"
     >
       {label} →
     </span>

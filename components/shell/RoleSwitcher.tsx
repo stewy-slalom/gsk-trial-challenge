@@ -46,7 +46,7 @@ export function RoleSwitcher({
         {/* sliding indicator */}
         <span
           aria-hidden
-          className="absolute top-1.5 bottom-1.5 rounded-full bg-gsk-orange/12 transition-transform duration-300 ease-out"
+          className="absolute top-1.5 bottom-1.5 rounded-full bg-brand-orange/12 transition-transform duration-300 ease-out"
           style={{
             width: `calc((100% - 0.75rem) / 3)`,
             transform: `translateX(calc(${index} * 100%))`,
@@ -66,7 +66,7 @@ export function RoleSwitcher({
               onClick={() => onChange(s.id)}
               className={`relative z-10 flex flex-1 items-center justify-center gap-1.5 rounded-full px-2 py-2 text-xs transition-colors sm:text-[13px] ${
                 active
-                  ? "font-semibold text-gsk-orange"
+                  ? "font-semibold text-brand-orange"
                   : "font-medium text-body hover:text-ink"
               }`}
             >

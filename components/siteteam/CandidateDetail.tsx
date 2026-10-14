@@ -130,14 +130,14 @@ export function CandidateDetail({
           <p className="mt-1 text-sm text-body">
             {c.code} · Age {c.age} · Advanced NSCLC
           </p>
-          <p className="text-[13px] text-meta">GSK&rsquo;916 · Guy&rsquo;s, London</p>
+          <p className="text-[13px] text-meta">CVN&rsquo;916 · Guy&rsquo;s, London</p>
           <p className="mt-1 text-[13px] text-meta">Source: {c.provenance}</p>
           <div className="mt-3">
             <BiomarkerChips biomarker={c.biomarker} />
           </div>
         </div>
         <div className="text-right">
-          <p className="text-3xl font-semibold text-gsk-orange">{c.matchScore}%</p>
+          <p className="text-3xl font-semibold text-brand-orange">{c.matchScore}%</p>
           <p className="text-[13px] text-meta">match score</p>
           <div className="mt-1 flex justify-end">
             <ConfidenceChip level={c.confidence} />
@@ -170,7 +170,7 @@ export function CandidateDetail({
           {/* Audit log, in the context of the detail page (§4/§7) */}
           <div className="rounded-lg border border-line bg-white p-5">
             <div className="mb-3 flex items-center gap-2">
-              <Clock size={16} className="text-gsk-orange" />
+              <Clock size={16} className="text-brand-orange" />
               <SectionLabel>Audit log</SectionLabel>
             </div>
             <AuditTrail entries={candidateAudit(c)} />

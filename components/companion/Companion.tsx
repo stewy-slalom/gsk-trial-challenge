@@ -76,7 +76,7 @@ export function Companion() {
             <div className="flex flex-1 items-center gap-2 rounded-md border border-line bg-white px-3 py-1.5">
               <Lock size={12} className="text-meta" />
               <span className="truncate text-[12px] text-body">
-                app.gsk-trials.com/patient
+                app.corvane-trials.com/patient
               </span>
             </div>
           </div>
@@ -84,7 +84,7 @@ export function Companion() {
           {/* The web page itself */}
           <div className="bg-white">
             {/* Orange hero header */}
-            <header className="bg-gradient-to-b from-gsk-orange to-[#f6a274] px-5 pb-6 pt-5 text-white">
+            <header className="bg-gradient-to-b from-brand-orange to-[#f6a274] px-5 pb-6 pt-5 text-white">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-wide text-white/85">
@@ -133,7 +133,7 @@ export function Companion() {
                     aria-current={active}
                     className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] transition-colors ${
                       active
-                        ? "bg-gsk-orange/10 font-semibold text-gsk-orange"
+                        ? "bg-brand-orange/10 font-semibold text-brand-orange"
                         : "font-medium text-body hover:bg-surface"
                     }`}
                   >
@@ -180,7 +180,7 @@ function TodayView({ onGo }: { onGo: (t: Tab) => void }) {
       {/* Primary: how are you feeling, mood check-in */}
       <Card>
         <div className="flex items-start gap-3">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gsk-orange/10 text-gsk-orange">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
             <Sparkle size={20} />
           </span>
           <div>
@@ -201,8 +201,8 @@ function TodayView({ onGo }: { onGo: (t: Tab) => void }) {
                 aria-pressed={selected}
                 className={`flex flex-col items-center gap-2 rounded-xl border py-5 transition-colors ${
                   selected
-                    ? "border-gsk-orange bg-gsk-orange/10 text-gsk-orange"
-                    : "border-transparent bg-surface text-body hover:bg-gsk-orange/5"
+                    ? "border-brand-orange bg-brand-orange/10 text-brand-orange"
+                    : "border-transparent bg-surface text-body hover:bg-brand-orange/5"
                 }`}
               >
                 {m.icon}
@@ -220,7 +220,7 @@ function TodayView({ onGo }: { onGo: (t: Tab) => void }) {
 
         <button
           onClick={() => onGo("checkin")}
-          className="mt-4 flex w-full items-center justify-center gap-1.5 text-sm font-semibold text-gsk-orange"
+          className="mt-4 flex w-full items-center justify-center gap-1.5 text-sm font-semibold text-brand-orange"
         >
           Log detailed symptoms <ArrowRight size={16} />
         </button>
@@ -275,7 +275,7 @@ function PrepCard({
       onClick={onClick}
       className="flex w-full items-center gap-3 rounded-2xl border border-line bg-white p-4 text-left transition-shadow hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)]"
     >
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gsk-orange/10 text-gsk-orange">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
         {icon}
       </span>
       <span className="flex-1">
@@ -299,7 +299,7 @@ function HomeJourney() {
     <Card>
       <div className="flex items-center justify-between">
         <h3 className="text-base font-semibold text-ink">Your journey</h3>
-        <span className="rounded-md bg-gsk-orange/10 px-2 py-0.5 text-[11px] font-semibold text-gsk-orange">
+        <span className="rounded-md bg-brand-orange/10 px-2 py-0.5 text-[11px] font-semibold text-brand-orange">
           {PATIENT.trialCode}
         </span>
       </div>
@@ -310,9 +310,9 @@ function HomeJourney() {
               <span
                 className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-semibold ${
                   s.done
-                    ? "bg-gsk-orange text-white"
+                    ? "bg-brand-orange text-white"
                     : s.current
-                      ? "border-2 border-gsk-orange bg-white text-gsk-orange"
+                      ? "border-2 border-brand-orange bg-white text-brand-orange"
                       : "bg-surface text-meta"
                 }`}
               >
@@ -320,7 +320,7 @@ function HomeJourney() {
               </span>
               <span
                 className={`text-center text-[11px] leading-tight ${
-                  s.current ? "font-semibold text-gsk-orange" : "text-meta"
+                  s.current ? "font-semibold text-brand-orange" : "text-meta"
                 }`}
               >
                 {s.label}
@@ -329,7 +329,7 @@ function HomeJourney() {
             {i < HOME_JOURNEY.length - 1 && (
               <span
                 className={`mx-1 h-0.5 flex-1 self-start rounded ${
-                  s.done ? "bg-gsk-orange" : "bg-line"
+                  s.done ? "bg-brand-orange" : "bg-line"
                 }`}
                 style={{ marginTop: "20px" }}
                 aria-hidden
@@ -340,7 +340,7 @@ function HomeJourney() {
       </div>
       <div className="mt-4 border-t border-line pt-3 text-sm text-body">
         Currently{" "}
-        <span className="font-semibold text-gsk-orange">On trial</span> · Cycle{" "}
+        <span className="font-semibold text-brand-orange">On trial</span> · Cycle{" "}
         {PATIENT.cycle} of {PATIENT.totalCycles}
       </div>
     </Card>
@@ -436,7 +436,7 @@ function NextStepsCard() {
                 t.state === "done"
                   ? "bg-active/15 text-[#0f7a54]"
                   : t.state === "current"
-                    ? "bg-gsk-orange text-white"
+                    ? "bg-brand-orange text-white"
                     : "border border-line text-meta"
               }`}
             >
@@ -595,11 +595,11 @@ function VisitsView() {
         Reminders are set automatically when a visit is booked.
       </p>
       {VISITS.map((v) => (
-        <Card key={v.id} className={v.next ? "border-gsk-orange/40" : ""}>
+        <Card key={v.id} className={v.next ? "border-brand-orange/40" : ""}>
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-base font-semibold text-ink">{v.title}</h3>
             {v.next && (
-              <span className="shrink-0 rounded-md bg-gsk-orange/10 px-2 py-0.5 text-[11px] font-semibold text-gsk-orange">
+              <span className="shrink-0 rounded-md bg-brand-orange/10 px-2 py-0.5 text-[11px] font-semibold text-brand-orange">
                 Next
               </span>
             )}
@@ -685,7 +685,7 @@ function CheckinView({ caregiver }: { caregiver: boolean }) {
                     aria-label={`${s} level ${n}`}
                     className={`h-10 flex-1 rounded-lg border text-sm font-semibold transition-colors ${
                       levels[s] === n
-                        ? "border-gsk-orange bg-gsk-orange/10 text-gsk-orange"
+                        ? "border-brand-orange bg-brand-orange/10 text-brand-orange"
                         : "border-line text-body hover:bg-surface"
                     }`}
                   >
@@ -703,7 +703,7 @@ function CheckinView({ caregiver }: { caregiver: boolean }) {
             onChange={(e) => setNote(e.target.value)}
             rows={3}
             placeholder="Optional. Write in your own words."
-            className="mt-1.5 w-full rounded-lg border border-line p-3 text-[15px] outline-none focus:border-gsk-orange"
+            className="mt-1.5 w-full rounded-lg border border-line p-3 text-[15px] outline-none focus:border-brand-orange"
           />
         </label>
         <p className="mt-3 flex items-center gap-1.5 text-[13px] text-meta">

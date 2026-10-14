@@ -58,14 +58,14 @@ export function Upstream({
               onClick={() => setTab(t.id)}
               className={`-mb-px flex items-center gap-2 border-b-2 pb-2.5 text-sm transition-colors ${
                 active
-                  ? "border-gsk-orange font-semibold text-gsk-orange"
+                  ? "border-brand-orange font-semibold text-brand-orange"
                   : "border-transparent font-medium text-body hover:text-ink"
               }`}
             >
               {t.label}
               <span
                 className={`rounded-md px-1.5 py-0.5 text-[11px] font-semibold ${
-                  active ? "bg-gsk-orange/10 text-gsk-orange" : "bg-surface text-meta"
+                  active ? "bg-brand-orange/10 text-brand-orange" : "bg-surface text-meta"
                 }`}
               >
                 {t.count}
@@ -160,7 +160,7 @@ function FunnelTab({
             </p>
             <p className="text-center text-sm font-medium text-ink">{s.label}</p>
             <p className="text-center text-[12px] text-meta">{s.sub}</p>
-            <p className="mt-1 flex items-center justify-center gap-1 text-[11px] font-semibold text-gsk-orange opacity-0 transition-opacity group-hover:opacity-100">
+            <p className="mt-1 flex items-center justify-center gap-1 text-[11px] font-semibold text-brand-orange opacity-0 transition-opacity group-hover:opacity-100">
               {s.hint} <ChevronRight size={12} />
             </p>
           </button>
@@ -202,7 +202,7 @@ const TREND: Record<
 > = {
   narrowing: {
     label: "Slightly narrowing",
-    cls: "text-gsk-orange bg-gsk-orange/10",
+    cls: "text-brand-orange bg-brand-orange/10",
     icon: <TrendDown size={13} />,
   },
   improving: {
@@ -267,7 +267,7 @@ function PathwayCard({ pathway: p }: { pathway: RecruitmentPathway }) {
             <span className="text-body">{p.actionPlan.human.length} human</span>
             <button
               onClick={() => setShowPlan((v) => !v)}
-              className="flex items-center gap-1 font-semibold text-gsk-orange"
+              className="flex items-center gap-1 font-semibold text-brand-orange"
             >
               View action plan
               <ChevronRight

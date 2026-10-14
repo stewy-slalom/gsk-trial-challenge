@@ -63,7 +63,7 @@ function Metric({
     <div>
       <p className="text-[13px] text-meta">{label}</p>
       <p className="mt-1 text-lg">
-        <span className={drift ? "font-semibold text-gsk-orange" : "font-semibold text-ink"}>
+        <span className={drift ? "font-semibold text-brand-orange" : "font-semibold text-ink"}>
           {value}
         </span>{" "}
         <span className="text-[13px] font-normal text-meta">(plan: {plan})</span>
@@ -214,7 +214,7 @@ function DiversityTrialCard({ trial }: { trial: Trial }) {
               onChange={(e) => setNotes(e.target.value)}
               rows={2}
               placeholder="Confirm or edit agent recommendations before deployment…"
-              className="mt-1 w-full rounded-lg border border-line bg-white p-3 text-sm outline-none focus:border-gsk-orange"
+              className="mt-1 w-full rounded-lg border border-line bg-white p-3 text-sm outline-none focus:border-brand-orange"
             />
           </label>
 
