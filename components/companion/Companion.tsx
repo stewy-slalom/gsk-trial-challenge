@@ -76,7 +76,7 @@ export function Companion() {
             <div className="flex flex-1 items-center gap-2 rounded-md border border-line bg-white px-3 py-1.5">
               <Lock size={12} className="text-meta" />
               <span className="truncate text-[12px] text-body">
-                app.corvane-trials.com/patient
+                app.acme-trials.com/patient
               </span>
             </div>
           </div>

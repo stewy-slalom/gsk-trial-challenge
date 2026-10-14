@@ -17,7 +17,7 @@ export interface StaffUser {
 }
 
 // Shared chrome for the two staff experiences (§11): left fixed sidebar with
-// Corvane lockup + brand block, top bar with page title + search, and a user
+// Acme Medical lockup + brand block, top bar with page title + search, and a user
 // profile at the foot of the sidebar. Active nav uses a tinted fill and weight
 // change, never a border stripe (§3 ban).
 export function StaffLayout({
@@ -50,7 +50,7 @@ export function StaffLayout({
       {/* Sidebar */}
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-line bg-white lg:flex">
         <div className="flex items-center px-5 pt-5">
-          <img src="/corvane-logo.svg" alt="Corvane" className="h-7 w-auto" />
+          <img src="/acme-logo.svg" alt="Acme Medical" className="h-7 w-auto" />
         </div>
         {brandTitle && (
           <div className="px-5 pb-4 pt-3">

@@ -130,7 +130,7 @@ export function CandidateDetail({
           <p className="mt-1 text-sm text-body">
             {c.code} · Age {c.age} · Advanced NSCLC
           </p>
-          <p className="text-[13px] text-meta">CVN&rsquo;916 · Guy&rsquo;s, London</p>
+          <p className="text-[13px] text-meta">ACM&rsquo;916 · Guy&rsquo;s, London</p>
           <p className="mt-1 text-[13px] text-meta">Source: {c.provenance}</p>
           <div className="mt-3">
             <BiomarkerChips biomarker={c.biomarker} />

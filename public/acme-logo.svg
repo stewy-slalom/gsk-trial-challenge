@@ -1,0 +1,5 @@
+<svg width="800" height="120" viewBox="0 0 800 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acme Medical">
+<rect x="0" y="12" width="96" height="96" rx="24" fill="#F36633"/>
+<path d="M26 88L48 36L70 88M34 72H62" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="120" y="82" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#1F1F1F" letter-spacing="-1">Acme Medical</text>
+</svg>
