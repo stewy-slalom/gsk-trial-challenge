@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* GSK brand font, self-hosted (no external requests, per spec §4)     */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "GSK Precision";
+  src: url("/fonts/GSKPrecision-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GSK Precision";
+  src: url("/fonts/GSKPrecision-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GSK Precision";
+  src: url("/fonts/GSKPrecision-Bold.woff2") format("woff2");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Design tokens (§11 GSK design system)                               */
+/* ------------------------------------------------------------------ */
+@theme {
+  --font-sans: "GSK Precision", var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-brand: "GSK Precision", var(--font-inter), system-ui, sans-serif;
+
+  /* Brand + surfaces */
+  --color-gsk-orange: #f36633;
+  --color-gsk-orange-hover: #d4541a;
+  --color-surface: #f8f9fa;
+  --color-line: #e2e6ea;
+
+  /* Text */
+  --color-ink: #1a1a2e;
+  --color-body: #4a5568;
+  --color-meta: #9aa5b4;
+
+  /* AI accent (agent-generated content only) */
+  --color-ai-teal: #0d9488;
+  --color-ai-indigo: #6366f1;
+  --color-ai-teal-tint: #f0fdf4;
+  --color-ai-indigo-tint: #eef2ff;
+
+  /* Semantic status */
+  --color-active: #10b981;
+  --color-paused: #f59e0b;
+  --color-escalated: #ef4444;
+
+  /* Elevation */
+  --shadow-rest: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-float: 0 8px 28px rgba(0, 0, 0, 0.14);
+
+  --radius-card: 8px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* In @layer base so text-colour utilities (e.g. text-white) can override */
+@layer base {
+  h1, h2, h3, h4 {
+    color: var(--color-ink);
+    font-family: var(--font-brand);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Visible focus for keyboard users (§9) */
+:focus-visible {
+  outline: 2px solid var(--color-gsk-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Honour reduced motion (§8, §9) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: hide scrollbar on horizontal metric strips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Agent processing shimmer (real in-flight indicator, §3/§11) */
+@keyframes ai-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.ai-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-ai-indigo-tint) 25%,
+    #dfe3ff 50%,
+    var(--color-ai-indigo-tint) 75%
+  );
+  background-size: 200% 100%;
+  animation: ai-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+.pulse-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+@keyframes sparkle-spin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+.sparkle-working { animation: sparkle-spin 1.1s ease-in-out infinite; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 0.35s ease-out both; }
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in { animation: fade-in 0.3s ease-out both; }
+
+/* Indeterminate progress bar (agent in-flight) */
+.progress-track {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--color-line);
+}
+@keyframes progress-indeterminate {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+.progress-indeterminate {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background: var(--color-ai-indigo);
+  border-radius: 999px;
+  animation: progress-indeterminate 1.3s ease-in-out infinite;
+}

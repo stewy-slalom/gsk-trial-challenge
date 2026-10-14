@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-Light.eot');
+    src: local('GSK Precision Light'), local('GSKPrecision-Light'),
+        url('GSKPrecision-Light.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-Light.woff2') format('woff2'),
+        url('GSKPrecision-Light.woff') format('woff'),
+        url('GSKPrecision-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-Regular.eot');
+    src: local('GSK Precision Regular'), local('GSKPrecision-Regular'),
+        url('GSKPrecision-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-Regular.woff2') format('woff2'),
+        url('GSKPrecision-Regular.woff') format('woff'),
+        url('GSKPrecision-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-Bold.eot');
+    src: local('GSK Precision Bold'), local('GSKPrecision-Bold'),
+        url('GSKPrecision-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-Bold.woff2') format('woff2'),
+        url('GSKPrecision-Bold.woff') format('woff'),
+        url('GSKPrecision-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-Thin.eot');
+    src: local('GSK Precision Thin'), local('GSKPrecision-Thin'),
+        url('GSKPrecision-Thin.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-Thin.woff2') format('woff2'),
+        url('GSKPrecision-Thin.woff') format('woff'),
+        url('GSKPrecision-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-ThinItalic.eot');
+    src: local('GSK Precision Thin Italic'), local('GSKPrecision-ThinItalic'),
+        url('GSKPrecision-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-ThinItalic.woff2') format('woff2'),
+        url('GSKPrecision-ThinItalic.woff') format('woff'),
+        url('GSKPrecision-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-RegularItalic.eot');
+    src: local('GSK Precision Regular Italic'), local('GSKPrecision-RegularItalic'),
+        url('GSKPrecision-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-RegularItalic.woff2') format('woff2'),
+        url('GSKPrecision-RegularItalic.woff') format('woff'),
+        url('GSKPrecision-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-LightItalic.eot');
+    src: local('GSK Precision Light Italic'), local('GSKPrecision-LightItalic'),
+        url('GSKPrecision-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-LightItalic.woff2') format('woff2'),
+        url('GSKPrecision-LightItalic.woff') format('woff'),
+        url('GSKPrecision-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GSK Precision';
+    src: url('GSKPrecision-BoldItalic.eot');
+    src: local('GSK Precision Bold Italic'), local('GSKPrecision-BoldItalic'),
+        url('GSKPrecision-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('GSKPrecision-BoldItalic.woff2') format('woff2'),
+        url('GSKPrecision-BoldItalic.woff') format('woff'),
+        url('GSKPrecision-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
