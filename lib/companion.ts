@@ -5,8 +5,8 @@
 export const PATIENT = {
   name: "Amara",
   trialCode: "ACM'916",
-  trialName: "SOLARIS-2",
-  site: "Guy's, London",
+  trialName: "ATLAS-2",
+  site: "Northbridge, London",
   clinician: "Dr Mensah",
   caregiver: "Joseph (son)",
   cycle: 3,
@@ -24,9 +24,9 @@ export const JOURNEY_STAGES = [
 ];
 
 export const EXPLAINER = {
-  headline: "What SOLARIS-2 is, in plain language",
+  headline: "What ATLAS-2 is, in plain language",
   summary:
-    "SOLARIS-2 is a research study testing whether a new medicine helps people with your type of lung cancer. Taking part means extra visits and checks, and a chance to help find better treatments.",
+    "ATLAS-2 is a research study testing whether a new medicine helps people with your type of lung cancer. Taking part means extra visits and checks, and a chance to help find better treatments.",
   sections: [
     {
       q: "Will I get a placebo instead of the real medicine?",
@@ -69,7 +69,7 @@ export const VISITS = [
     title: "Cycle 3 treatment visit",
     when: "Tue 15 Jul, 10:30",
     mode: "In person",
-    location: "Guy's, London — Oncology Day Unit",
+    location: "Northbridge, London — Oncology Day Unit",
     prep: ["Bring your medication list", "Eat and drink normally", "Allow about 3 hours"],
     involves: "Blood test, then treatment infusion and a short check with the nurse.",
     next: true,
@@ -88,7 +88,7 @@ export const VISITS = [
     title: "Cycle 4 treatment visit",
     when: "Tue 05 Aug, 10:30",
     mode: "Home visit available",
-    location: "Home visit or Guy's, your choice",
+    location: "Home visit or Northbridge, your choice",
     prep: ["Confirm your choice 3 days before"],
     involves: "Bloods and treatment. A nurse can come to you to save the journey.",
   },

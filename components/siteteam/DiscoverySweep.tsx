@@ -19,7 +19,7 @@ export function DiscoverySweep({
   const sweep = useAgentRun({
     steps: [
       "Connecting to site EHR",
-      "Scanning records against SOLARIS-2 criteria",
+      "Scanning records against ATLAS-2 criteria",
       "Matching biomarker and molecular panels",
       "Ranking and de-duplicating candidates",
     ],

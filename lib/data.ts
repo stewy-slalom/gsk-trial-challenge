@@ -61,9 +61,9 @@ export function milestonesFor(index: number): Milestone[] {
 
 export const TRIALS: Trial[] = [
   {
-    id: "solaris",
+    id: "atlas",
     code: "ACM'916",
-    name: "SOLARIS-2",
+    name: "ATLAS-2",
     indication: "Advanced NSCLC, STK11 / KEAP1 co-mutation",
     phase: "Phase II",
     target: 48,
@@ -96,9 +96,9 @@ export const TRIALS: Trial[] = [
     ],
   },
   {
-    id: "helios",
+    id: "nova",
     code: "ACM'742",
-    name: "HELIOS-B",
+    name: "NOVA-B",
     indication: "Metastatic colorectal, MSI-high",
     phase: "Phase II",
     target: 40,
@@ -130,9 +130,9 @@ export const TRIALS: Trial[] = [
     ],
   },
   {
-    id: "aurora",
+    id: "orion",
     code: "ACM'508",
-    name: "AURORA",
+    name: "ORION",
     indication: "Ovarian, BRCA-mutated, platinum-sensitive",
     phase: "Phase II",
     target: 36,
@@ -165,17 +165,17 @@ export const TRIALS: Trial[] = [
 ];
 
 // ------------------------------------------------------------------
-// Sites (per trial). Hero site is Guy's, London on the SOLARIS-2 trial.
+// Sites (per trial). Hero site is Northbridge, London on the ATLAS-2 trial.
 // ------------------------------------------------------------------
 
 export const SITES: Site[] = [
   {
-    id: "guys",
-    trialId: "solaris",
-    name: "Site 04 — Guy's",
+    id: "northbridge",
+    trialId: "atlas",
+    name: "Site 04 — Northbridge",
     city: "London",
     country: "United Kingdom",
-    institution: "Guy's and St Thomas' NHS Foundation Trust",
+    institution: "Northbridge University Hospitals",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 104, shortlisted: 40, screening: 22, eligible: 14, enrolled: 6 },
@@ -189,11 +189,11 @@ export const SITES: Site[] = [
   },
   {
     id: "manchester",
-    trialId: "solaris",
+    trialId: "atlas",
     name: "Site 07 — Manchester",
     city: "Manchester",
     country: "United Kingdom",
-    institution: "The Christie NHS Foundation Trust",
+    institution: "Mersey Cancer Centre",
     activation: "escalated",
     activationLabel: "Screen-fail spike",
     funnel: { discovered: 88, shortlisted: 31, screening: 18, eligible: 5, enrolled: 4 },
@@ -207,11 +207,11 @@ export const SITES: Site[] = [
   },
   {
     id: "boston",
-    trialId: "solaris",
+    trialId: "atlas",
     name: "Site 11 — Boston",
     city: "Boston",
     country: "United States",
-    institution: "Dana-Farber Cancer Institute",
+    institution: "Harbor Cancer Institute",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 96, shortlisted: 35, screening: 20, eligible: 12, enrolled: 11 },
@@ -225,11 +225,11 @@ export const SITES: Site[] = [
   },
   {
     id: "madrid",
-    trialId: "solaris",
+    trialId: "atlas",
     name: "Site 15 — Madrid",
     city: "Madrid",
     country: "Spain",
-    institution: "Hospital Universitario 12 de Octubre",
+    institution: "Hospital Universitario Central",
     activation: "paused",
     activationLabel: "Activating",
     funnel: { discovered: 41, shortlisted: 9, screening: 3, eligible: 2, enrolled: 2 },
@@ -242,10 +242,10 @@ export const SITES: Site[] = [
     },
   },
 
-  // HELIOS-B (ACM'742) sites
+  // NOVA-B (ACM'742) sites
   {
     id: "chicago",
-    trialId: "helios",
+    trialId: "nova",
     name: "Site 02 — Chicago",
     city: "Chicago",
     country: "United States",
@@ -263,11 +263,11 @@ export const SITES: Site[] = [
   },
   {
     id: "birmingham",
-    trialId: "helios",
+    trialId: "nova",
     name: "Site 09 — Birmingham",
     city: "Birmingham",
     country: "United Kingdom",
-    institution: "Queen Elizabeth Hospital Birmingham",
+    institution: "Midlands General Hospital",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 60, shortlisted: 18, screening: 9, eligible: 5, enrolled: 4 },
@@ -281,11 +281,11 @@ export const SITES: Site[] = [
   },
   {
     id: "berlin",
-    trialId: "helios",
+    trialId: "nova",
     name: "Site 12 — Berlin",
     city: "Berlin",
     country: "Germany",
-    institution: "Charite Universitatsmedizin Berlin",
+    institution: "Spree University Hospital",
     activation: "escalated",
     activationLabel: "Activation blocked",
     funnel: { discovered: 22, shortlisted: 5, screening: 2, eligible: 1, enrolled: 1 },
@@ -298,14 +298,14 @@ export const SITES: Site[] = [
     },
   },
 
-  // AURORA (ACM'508) sites
+  // ORION (ACM'508) sites
   {
     id: "newyork",
-    trialId: "aurora",
+    trialId: "orion",
     name: "Site 01 — New York",
     city: "New York",
     country: "United States",
-    institution: "Memorial Sloan Kettering Cancer Center",
+    institution: "Hudson Memorial Cancer Center",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 120, shortlisted: 40, screening: 24, eligible: 21, enrolled: 19 },
@@ -319,11 +319,11 @@ export const SITES: Site[] = [
   },
   {
     id: "londonaur",
-    trialId: "aurora",
+    trialId: "orion",
     name: "Site 06 — London",
     city: "London",
     country: "United Kingdom",
-    institution: "The Royal Marsden",
+    institution: "Thames Royal Cancer Hospital",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 96, shortlisted: 30, screening: 16, eligible: 13, enrolled: 12 },
@@ -337,11 +337,11 @@ export const SITES: Site[] = [
   },
   {
     id: "paris",
-    trialId: "aurora",
+    trialId: "orion",
     name: "Site 08 — Paris",
     city: "Paris",
     country: "France",
-    institution: "Institut Curie",
+    institution: "Institut Lumiere",
     activation: "active",
     activationLabel: "Active",
     funnel: { discovered: 30, shortlisted: 8, screening: 4, eligible: 3, enrolled: 3 },
@@ -360,7 +360,7 @@ export function sitesForTrial(trialId: string): Site[] {
 }
 
 // ------------------------------------------------------------------
-// Candidates for the hero site (Guy's / SOLARIS-2). Detailed cards
+// Candidates for the hero site (Northbridge / ATLAS-2). Detailed cards
 // across the pipeline; the wider discovery pool is represented as a
 // count (spec §6.2 — ~100 discovered, wide funnel).
 // ------------------------------------------------------------------
@@ -390,8 +390,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- Shortlist (Assist: ranked, awaiting "Begin screening") ----
   {
     id: "c-shortlist-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0421",
     age: 64,
     sex: "F",
@@ -416,8 +416,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-shortlist-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0388",
     age: 71,
     sex: "M",
@@ -441,8 +441,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-shortlist-3",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0450",
     age: 58,
     sex: "F",
@@ -467,8 +467,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- In screening (Agent aggregates, humans examine) ----
   {
     id: "c-screening-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0362",
     age: 67,
     sex: "M",
@@ -496,8 +496,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-screening-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0339",
     age: 62,
     sex: "F",
@@ -527,8 +527,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- Eligible / confirmed (Assist → Human decision) ----
   {
     id: "c-eligible-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0301",
     age: 69,
     sex: "F",
@@ -552,8 +552,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-eligible-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0295",
     age: 55,
     sex: "M",
@@ -574,8 +574,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- Screen-fail (recorded, feeds criteria-refinement analysis) ----
   {
     id: "c-screenfail-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0277",
     age: 73,
     sex: "M",
@@ -595,8 +595,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-screenfail-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0268",
     age: 66,
     sex: "F",
@@ -618,8 +618,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- Enrolled / on-trial ----
   {
     id: "c-enrolled-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0212",
     age: 60,
     sex: "F",
@@ -641,8 +641,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-enrolled-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0198",
     age: 68,
     sex: "M",
@@ -666,8 +666,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-enrolled-3",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0184",
     age: 63,
     sex: "F",
@@ -693,8 +693,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   // ---- A few sample discover-stage candidates (the wide funnel) ----
   {
     id: "c-discover-1",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0512",
     age: 59,
     sex: "F",
@@ -710,8 +710,8 @@ const CANDIDATES_RAW: Omit<Candidate, "name">[] = [
   },
   {
     id: "c-discover-2",
-    trialId: "solaris",
-    siteId: "guys",
+    trialId: "atlas",
+    siteId: "northbridge",
     code: "PT-0524",
     age: 70,
     sex: "M",
@@ -758,7 +758,7 @@ export const DISEASE_POPULATION = [
 ];
 
 // ------------------------------------------------------------------
-// On-trial participants per site (spec §6.3 point 4). The hero site (Guy's)
+// On-trial participants per site (spec §6.3 point 4). The hero site (Northbridge)
 // is seeded with its real enrolled patients — including PT-0212, the Companion
 // user — so the story stays coherent; other sites are filled deterministically
 // to match each site's enrolled count. Access is logged and attributable (§4).
@@ -814,7 +814,7 @@ const CYCLE_POOL = [
   "Cycle 5 of 6",
 ];
 const SITE_CODE_BASE: Record<string, number> = {
-  guys: 220,
+  northbridge: 220,
   manchester: 340,
   boston: 410,
   madrid: 520,
@@ -830,7 +830,7 @@ export function siteParticipants(site: Site): SiteParticipant[] {
   const rows: SiteParticipant[] = [];
 
   // Real, coherent rows first for the hero site.
-  if (site.id === "guys") {
+  if (site.id === "northbridge") {
     for (const c of CANDIDATES.filter((c) => c.stage === "enrolled")) {
       rows.push({
         name: c.name,
@@ -904,8 +904,8 @@ export function newDiscoveredBatch(startSeq: number, count: number): Candidate[]
     const person = NAME_POOL[(seq * 3) % NAME_POOL.length];
     batch.push({
       id: `c-discover-new-${seq}`,
-      trialId: "solaris",
-      siteId: "guys",
+      trialId: "atlas",
+      siteId: "northbridge",
       name: person.name,
       code: `PT-0${600 + seq}`,
       age: 54 + (seq % 22),
@@ -963,7 +963,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a1",
     date: "13 Jul 2026",
     time: "09:05",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     siteId: "manchester",
     category: "Early warning",
@@ -975,7 +975,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a2",
     date: "13 Jul 2026",
     time: "08:40",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     category: "Enrolment",
     actor: "RTSM (system)",
@@ -985,9 +985,9 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a3",
     date: "12 Jul 2026",
     time: "16:22",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
-    siteId: "guys",
+    siteId: "northbridge",
     category: "Consent",
     actor: "Agent",
     event:
@@ -997,9 +997,9 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a4",
     date: "12 Jul 2026",
     time: "11:10",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
-    siteId: "guys",
+    siteId: "northbridge",
     category: "Enrolment",
     actor: "Dr A. Mensah, PI",
     event: "Carmen Ortiz (PT-0301) confirmed eligible after agent pre-check.",
@@ -1008,7 +1008,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a5",
     date: "11 Jul 2026",
     time: "14:48",
-    trialId: "helios",
+    trialId: "nova",
     trialCode: "ACM'742",
     category: "Early warning",
     actor: "Agent",
@@ -1019,7 +1019,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a6",
     date: "11 Jul 2026",
     time: "10:02",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     category: "Diversity",
     actor: "Agent",
@@ -1030,7 +1030,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a7",
     date: "10 Jul 2026",
     time: "15:30",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     category: "Criteria",
     actor: "CTM · M. Delgado",
@@ -1041,7 +1041,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a8",
     date: "09 Jul 2026",
     time: "09:15",
-    trialId: "aurora",
+    trialId: "orion",
     trialCode: "ACM'508",
     category: "Milestone",
     actor: "Agent",
@@ -1051,9 +1051,9 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a9",
     date: "08 Jul 2026",
     time: "13:40",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
-    siteId: "guys",
+    siteId: "northbridge",
     category: "Enrolment",
     actor: "Dr A. Mensah, PI",
     event: "David Sullivan (PT-0277) marked screen-fail: KEAP1 wild-type on confirmation.",
@@ -1062,7 +1062,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a10",
     date: "06 Jul 2026",
     time: "10:25",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     siteId: "madrid",
     category: "Activation",
@@ -1074,7 +1074,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a11",
     date: "05 Jul 2026",
     time: "17:05",
-    trialId: "helios",
+    trialId: "nova",
     trialCode: "ACM'742",
     category: "Diversity",
     actor: "Agent",
@@ -1085,7 +1085,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a12",
     date: "03 Jul 2026",
     time: "12:00",
-    trialId: "aurora",
+    trialId: "orion",
     trialCode: "ACM'508",
     category: "Consent",
     actor: "Dr R. Silva, PI",
@@ -1095,7 +1095,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a13",
     date: "28 Jun 2026",
     time: "09:50",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     category: "Milestone",
     actor: "CTM · M. Delgado",
@@ -1105,9 +1105,9 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a14",
     date: "20 Jun 2026",
     time: "11:35",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
-    siteId: "guys",
+    siteId: "northbridge",
     category: "Enrolment",
     actor: "RTSM (system)",
     event: "Amara Okafor (PT-0212) enrolled and randomised.",
@@ -1116,7 +1116,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a15",
     date: "14 Jun 2026",
     time: "08:20",
-    trialId: "helios",
+    trialId: "nova",
     trialCode: "ACM'742",
     category: "Milestone",
     actor: "CTM · M. Delgado",
@@ -1126,7 +1126,7 @@ export const AUDIT_LOG: AuditEntry[] = [
     id: "a16",
     date: "02 Jun 2026",
     time: "14:10",
-    trialId: "aurora",
+    trialId: "orion",
     trialCode: "ACM'508",
     category: "Early warning",
     actor: "Agent",
@@ -1171,7 +1171,7 @@ export interface EarlyWarning {
 export const EARLY_WARNINGS: EarlyWarning[] = [
   {
     id: "w1",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     severity: "High",
     title: "Screen-failure rate 2.1x trial average at Manchester",
@@ -1199,7 +1199,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   },
   {
     id: "w2",
-    trialId: "helios",
+    trialId: "nova",
     trialCode: "ACM'742",
     severity: "High",
     title: "First-patient-in slip of 5 weeks predicted",
@@ -1227,7 +1227,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   },
   {
     id: "w3",
-    trialId: "solaris",
+    trialId: "atlas",
     trialCode: "ACM'916",
     severity: "Medium",
     title: "Diversity plan drifting on representation",
@@ -1255,7 +1255,7 @@ export const EARLY_WARNINGS: EarlyWarning[] = [
   },
   {
     id: "w4",
-    trialId: "aurora",
+    trialId: "orion",
     trialCode: "ACM'508",
     severity: "Low",
     title: "Approaching enrolment target with strong retention",

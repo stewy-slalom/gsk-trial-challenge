@@ -35,7 +35,7 @@ screen (§5). Each experience preserves its own state when you switch away.
 
 ## How the spec shows up in the code
 
-- **Coherent funnel** (`lib/data.ts`) — the hero site (Guy's, London) narrows
+- **Coherent funnel** (`lib/data.ts`) — the hero site (Northbridge, London) narrows
   104 discovered → 14 eligible → an enrolled cohort. The same numbers drive the
   Site Team pipeline, the Trial Operations site funnel, and the enrolled patient
   (PT-0212) who is the Companion user. One story across all three (§11).

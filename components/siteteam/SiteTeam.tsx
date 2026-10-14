@@ -107,9 +107,9 @@ export function SiteTeam() {
     <>
       <StaffLayout
         title="Site Team workspace"
-        subtitle="Site 04 — Guy's, London · SOLARIS-2 (ACM'916)"
+        subtitle="Site 04 — Northbridge, London · ATLAS-2 (ACM'916)"
         brandTitle="Site Team"
-        brandSubtitle="Guy's, London"
+        brandSubtitle="Northbridge, London"
         user={{
           name: "R. Osei",
           role: "Research Coordinator",
